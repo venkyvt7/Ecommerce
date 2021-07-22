@@ -10,8 +10,8 @@ Orders.init({
   userid:{
       type:DataTypes.STRING
   },
-  products:{
-      type:DataTypes.ARRAY
+  productsid:{
+      type:DataTypes.STRING
   }
 
 },{

@@ -17,11 +17,12 @@ console.log("db is ready");
 })
 const users=require('./routes/userentry/user')
 const products=require('./routes/products/products');
-
+const orders=require('./routes/orders/order');
 
 app.use(express.json());
 app.use(products);
 app.use(users);
+app.use(orders);
 app.get('/',(req,res)=>{
 
 res.send("100% working");
