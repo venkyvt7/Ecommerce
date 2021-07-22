@@ -18,7 +18,7 @@ const users=require('./routes/userentry/user')
 
 app.use(express.json());
 
-
+app.use(users);
 app.get('/',(req,res)=>{
 
 res.send("100% working");
