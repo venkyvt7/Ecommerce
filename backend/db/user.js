@@ -21,6 +21,9 @@ User.init({
         type:DataTypes.STRING
 
     },
+    address:{
+        type:DataTypes.STRING
+    }
    
 
 },

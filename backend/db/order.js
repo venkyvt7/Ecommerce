@@ -13,6 +13,11 @@ Orders.init({
   productsid:{
       type:DataTypes.STRING
   }
+  ,
+    address:{
+        type:DataTypes.STRING
+    }
+   
 
 },{
 

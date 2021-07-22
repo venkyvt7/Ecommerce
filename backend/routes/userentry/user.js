@@ -10,7 +10,7 @@ const router =express.Router();
 
 router.post('/signup',(req,res)=>{
 
-const {username,email,password}=req.body;
+const {username,email,password,address}=req.body;
 
 User.create(req.body).then(()=>{
 res.send("inserted");
