@@ -1,4 +1,6 @@
+const e = require('express');
 const express=require('express');
+// const { where } = requi{re('sequelize/types');
 const sequelize = require('../../db/db');
 const User=require('../../db/user.js');
 
@@ -18,9 +20,31 @@ res.send("inserted");
 
 });
 
-router.post('/login',(req,res)=>{
+router.post('/login',async (req,res)=>{
+    const {email,password}=req.body;
+const userdetail= await User.findOne({where:{email:email}})
 
+console.log(userdetail.password);
 
+if(!userdetail)
+{
+    res.send("user Not Found");
+
+}
+else
+{
+  if(userdetail.password==password)
+  {
+      res.send("correct passwordu serdetail");
+  }
+  
+  else{
+ 
+    res.send("wrong password");
+
+  }
+}
+// res.send(userdetail);
 });
 
 

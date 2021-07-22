@@ -7,7 +7,10 @@ const sequelize=require('./db/db');
 
 
 
-sequelize.sync().then(()=>{
+sequelize.sync({
+    // force:true
+
+}).then(()=>{
 
 console.log("db is ready");
 

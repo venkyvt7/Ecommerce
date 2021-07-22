@@ -14,5 +14,15 @@ router.post('/addproducts',(req,res)=>{
 
 })
 
+router.get('/getproducts',async (req,res)=>{
+
+    console.log("sdkds");
+  const AllProducts= await Products.findAll();
+
+  res.send(AllProducts);
+
+
+
+});
 
 module.exports=router;
