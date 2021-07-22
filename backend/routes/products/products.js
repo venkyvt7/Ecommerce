@@ -4,7 +4,7 @@ const Products=require('../../db/products.js');
 const router =express.Router();
 router.post('/addproducts',(req,res)=>{
 
-    console.log("sdkds");
+    // console.log("sdkds");
     Products.create(req.body).then(()=>{
 
         res.send("products is created");

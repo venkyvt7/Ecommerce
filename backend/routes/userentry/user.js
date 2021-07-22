@@ -35,7 +35,7 @@ else
 {
   if(userdetail.password==password)
   {
-      res.send("correct passwordu serdetail");
+      res.send(userdetail);
   }
   
   else{
