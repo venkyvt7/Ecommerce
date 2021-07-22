@@ -13,11 +13,11 @@ console.log("db is ready");
 
 })
 const users=require('./routes/userentry/user')
-
+const products=require('./routes/products/products');
 
 
 app.use(express.json());
-
+app.use(products);
 app.use(users);
 app.get('/',(req,res)=>{
 
