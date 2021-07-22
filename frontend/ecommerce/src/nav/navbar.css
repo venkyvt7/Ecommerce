@@ -1,13 +1,21 @@
+
 ul{
 
-    background-color: rgb(223, 169, 89); 
+   
+    /* background-color: linear-gradient(45deg, rgb(206, 203, 33), rgb(103, 194, 18)); */
+    background: linear-gradient(45deg, rgb(232, 235, 191), rgb(248, 246, 93));
+
     list-style-type: none;
     display: flex;
 
 }
 
+ul {
+    margin-top: 0;
+  }
 button{
     display: none;
+
 }
 
 .links{
@@ -18,21 +26,27 @@ button{
 li{
 
    
-margin: 2rem;
+/* margin: 2rem; */
+padding: 2rem;
 /* margin-top: 0rem; */
+}
+
+li:hover{
+    background:  linear-gradient(45deg, rgb(230, 129, 99), rgb(248, 246, 93));
 }
 
 
 nav{
-    margin-top: 0px;
+    /* margin:1rem; */
+    /* margin-top: 0px; */
 }
 
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:784px) {
 
     ul{
 
-
+    padding: 2rem;
     list-style-type: none;
     display: block;
     align-items: center;
@@ -42,19 +56,27 @@ nav{
 
 button{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: rgb(248, 178, 93);
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 
 
 li{
-margin: 1rem;
+padding: 1rem;
+
+
+}
+
+button{
+
 
 }
 
 #show{
     display: block;
-    
+    margin: 1px;
+    /* margin: 3rem; */
 }
 
 #hidden{
