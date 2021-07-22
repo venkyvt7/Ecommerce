@@ -13,18 +13,18 @@ const [butt,setButt]=useState(1);
                 <nav>
        
         <ul>
-         <button  onClick={()=>{setButt(1-butt)}}> {" "} 
+         <button  className="butt1" onClick={()=>{setButt(1-butt)}}> {" "} 
        
        <ReorderIcon />
        </button> 
            <div className="links" id={butt?"hidden":"show"}>   
            
-              <li> HOME</li>
-                <li> SHOP</li>
-                <li> CART</li>
-                <li> MYORDERS</li>
-                <li>ACCOUNT</li>
-                <li> LOGOUT  </li>
+           <a href="/home">   <li> HOME</li> </a> 
+           <a href="/shop">    <li> SHOP</li> </a> 
+           <a href="/cart">  <li> CART</li> </a> 
+           <a href="/myorders">  <li> MYORDERS</li> </a> 
+           <a href="/account">  <li>ACCOUNT</li> </a> 
+           <a href="/logout">  <li> LOGOUT  </li> </a> 
                 </div>  
        
         </ul>

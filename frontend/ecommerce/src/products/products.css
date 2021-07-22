@@ -1,0 +1,30 @@
+.container{
+ 
+    display: flex;
+    justify-content: center;
+   
+}
+
+.card {
+
+    width:90vw;
+    padding:1rem;
+    margin: 1px;
+    background: linear-gradient(-50deg,rgb(245, 137, 137),rgb(153, 153, 245));
+    display: flex;
+    justify-content: center;
+    border: 2px solid gray;
+    /* background-color: rgb(224, 174, 35); */
+
+}
+
+.card div{
+
+    padding: 4px;
+
+}
+
+.AddButton{
+
+    margin-top: 1rem;
+}

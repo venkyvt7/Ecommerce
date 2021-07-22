@@ -1,9 +1,21 @@
 
+
+
+a{
+    text-decoration: none;
+
+}
+li{
+    color: black;
+    
+        /* font-variant: normal;
+     */
+    }
 ul{
 
    
     /* background-color: linear-gradient(45deg, rgb(206, 203, 33), rgb(103, 194, 18)); */
-    background: linear-gradient(45deg, rgb(232, 235, 191), rgb(248, 246, 93));
+    background: linear-gradient(45deg, rgb(233, 238, 169), rgb(248, 246, 93));
 
     list-style-type: none;
     display: flex;
@@ -13,7 +25,7 @@ ul{
 ul {
     margin-top: 0;
   }
-button{
+  .butt1{
     display: none;
 
 }
@@ -32,7 +44,7 @@ padding: 2rem;
 }
 
 li:hover{
-    background:  linear-gradient(45deg, rgb(230, 129, 99), rgb(248, 246, 93));
+    background:  linear-gradient(45deg, rgb(210, 223, 28), rgb(248, 246, 93));
 }
 
 
@@ -54,7 +66,7 @@ nav{
 
 }
 
-button{
+.butt1{
     display: flex;
     background-color: rgb(248, 178, 93);
     /* align-items: center; */
@@ -68,7 +80,7 @@ padding: 1rem;
 
 }
 
-button{
+.butt1{
 
 
 }
