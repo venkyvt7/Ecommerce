@@ -1,13 +1,65 @@
 ul{
 
-
+    background-color: rgb(223, 169, 89); 
     list-style-type: none;
     display: flex;
 
 }
 
+button{
+    display: none;
+}
+
+.links{
+    display: flex;
+    
+}
+
 li{
+
+   
 margin: 2rem;
+/* margin-top: 0rem; */
+}
+
+
+nav{
+    margin-top: 0px;
+}
+
+
+@media only screen and (max-width:600px) {
+
+    ul{
+
+
+    list-style-type: none;
+    display: block;
+    align-items: center;
+    text-align: center;
 
 }
 
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+li{
+margin: 1rem;
+
+}
+
+#show{
+    display: block;
+    
+}
+
+#hidden{
+    display: none;
+}
+
+
+}
