@@ -1,4 +1,3 @@
-const e = require('express');
 const express=require('express');
 // const { where } = requi{re('sequelize/types');
 const sequelize = require('../../db/db');
