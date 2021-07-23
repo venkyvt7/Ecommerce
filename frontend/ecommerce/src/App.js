@@ -2,6 +2,7 @@
 // import './App.css';
 import Login from './entry/login';
 import Navbar from './nav/navbar';
+import Orders from './orders/orders';
 import Products from './products/products';
 function App() {
   return (
@@ -10,7 +11,10 @@ function App() {
       {/* <Login/> */}
       <Navbar/>
 
-      <Products/>
+      {/* <Products/> */}
+
+      <Orders/>
+      
     </div>
   );
 }
