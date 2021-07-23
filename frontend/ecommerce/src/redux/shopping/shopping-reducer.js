@@ -1,22 +1,24 @@
 import * as actionTypes from "./shopping-types";
 
 const INITIAL_STATE = {
-  products: [],
-  cart: [],
+ 
+  cartD: [],
 };
 
-const shopReducer = (state=INITIAL_STATE, action) => {
+const  cardItems = (state=[], action) => {
   switch (action.type) {
     case actionTypes.ADD_TO_CART:
-      return {
+//  console.log('reucer',state);
+
+      return [
 
     
        ...state,
-       cart:action.data 
+      { cartD:action.data} 
              
 
 
-      };
+      ]
 
     case actionTypes.REMOVE_FROM_CART:
       return {};
@@ -29,4 +31,4 @@ const shopReducer = (state=INITIAL_STATE, action) => {
 
 
 
-export default shopReducer;
+export default  cardItems;

@@ -1,7 +1,7 @@
 import  {connect} from 'react-redux';
 import  {addToCart} from './shopping-action';
-
-import Products  from '../../components/products/products';
+import Navbar from '../../components/nav/navbar.js'
+// import Products  from '../../components/products/products';
 const mapStateToProps=state=>({
 
     // {console.log(state);
@@ -20,4 +20,4 @@ const mapDispatchToProps=dispatch=>({
 
 
 
-export default connect(mapStateToProps,mapDispatchToProps)(Products);
+export default connect(mapStateToProps,mapDispatchToProps)(Navbar);

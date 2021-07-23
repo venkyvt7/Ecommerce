@@ -1,8 +1,8 @@
 import {combineReducers} from 'redux'
-import shopReducer from './shopping/shopping-reducer';
+import cardItems from './shopping/shopping-reducer';
 
 const rootReducer=combineReducers({
-shop:shopReducer,
+cardItems,
 });
 
 

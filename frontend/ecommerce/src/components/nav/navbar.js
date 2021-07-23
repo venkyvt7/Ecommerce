@@ -1,10 +1,12 @@
 import React,{useState} from 'react'
 import './navbar.css';
 import ReorderIcon from '@material-ui/icons/Reorder' 
-function Navbar() {
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+function Navbar(props) {
 
 const [butt,setButt]=useState(1);
 
+console.warn(props.data.cardItems.length,"navbr");
 
 
     return (
@@ -21,12 +23,22 @@ const [butt,setButt]=useState(1);
            
            <a href="/home">   <li> HOME</li> </a> 
            <a href="/shop">    <li> SHOP</li> </a> 
-           <a href="/cart">  <li> CART</li> </a> 
+           <a href="/cart">  <li> 
+           <div className="cartshow" style={{ display:"flex",  float:"right" ,marginTop:"12px"}}> 
+           
+           
+           <div style={{ display:"flex",  float:"right" ,marginTop:"12px"}} > {props.data.cardItems.length}</div> 
+<ShoppingCartIcon/> </div>
+                
+               CART</li> </a> 
            <a href="/myorders">  <li> MYORDERS</li> </a> 
            <a href="/account">  <li>ACCOUNT</li> </a> 
            <a href="/logout">  <li> LOGOUT  </li> </a> 
+         <a>   
+</a>
                 </div>  
        
+                
         </ul>
 
                 </nav>
