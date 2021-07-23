@@ -1,7 +1,18 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
+import axios from 'axios';
 import "./products.css";
 
 function Products() {
+
+  const [products, setProducts] = useState([]);
+
+
+  useEffect(() => {
+    
+    axios.get('http://localhost:4001/getproducts').then((data)=>setProducts(data.data)).catch();
+
+  }, [])
+
   return (
     <div>
       <div>
@@ -10,13 +21,19 @@ function Products() {
       </div>
       <hr />
 
-      <div className="container">
-        <div className="card">
+    
+
+     {
+       products.map((data)=>{
+ return (
+         <>
+           <div className="container">
+            <div className="card">
           <div>
             <div>
-              <h3>nksdkdsds </h3>
+              <h3>{data.name} </h3>
 
-              <p1> Price</p1>
+              <p1> PRICE ${data.price}</p1>
 
               <br />
 
@@ -24,7 +41,16 @@ function Products() {
             </div>
           </div>
         </div>
-      </div>
+        </div>
+      </>
+
+         )
+       })
+
+     }
+
+       
+     
     </div>
   );
 }

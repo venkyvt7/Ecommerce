@@ -11,9 +11,9 @@ function App() {
       {/* <Login/> */}
       <Navbar/>
 
-      {/* <Products/> */}
+      <Products/>
 
-      <Orders/>
+      {/* <Orders/> */}
       
     </div>
   );

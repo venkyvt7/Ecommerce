@@ -4,12 +4,13 @@ import * as actionTypes from './shopping-types';
 export const addToCart=(itemId)=>{
 return 
 {
+    
     type:actionTypes.ADD_TO_CART,
-    payload:{
+    payload :{
         id:itemID
     }
-
-}
+  
+};
 
 
 }
@@ -22,14 +23,13 @@ return
   payload:{
       id:itemID
   }
+  
+
+
+}
 
 
 
 }
 
 
-
-}
-
-
-export const 

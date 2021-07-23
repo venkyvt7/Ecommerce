@@ -1,11 +1,12 @@
 const express=require('express');
 const app=express();
+ const cors=require('cors');
 const PORT=process.env.PORT||4001;
 
 
 const sequelize=require('./db/db');
 
-
+app.use(cors());
 
 sequelize.sync({
     // force:true
