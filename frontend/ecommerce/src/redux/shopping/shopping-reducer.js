@@ -8,7 +8,14 @@ const INITIAL_STATE = {
 const shopReducer = (state=INITIAL_STATE, action) => {
   switch (action.type) {
     case actionTypes.ADD_TO_CART:
-      return {};
+      return {
+
+
+        
+             
+
+
+      };
 
     case actionTypes.REMOVE_FROM_CART:
       return {};

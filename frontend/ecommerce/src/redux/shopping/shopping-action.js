@@ -1,14 +1,12 @@
 import * as actionTypes from './shopping-types';
 
 
-export const addToCart=(itemId)=>{
+export const addToCart=(data)=>{
 return 
 {
     
     type:actionTypes.ADD_TO_CART,
-    payload :{
-        id:itemID
-    }
+    data :data
   
 };
 
@@ -16,13 +14,11 @@ return
 }
 
 
-export const removeFromCart=(itemID)=>{
+export const removeFromCart=(data)=>{
 return 
 {
   type:actionTypes.REMOVE_FROM_CART,
-  payload:{
-      id:itemID
-  }
+  data:data
   
 
 
