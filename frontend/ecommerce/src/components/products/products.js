@@ -1,9 +1,13 @@
 import React,{useState,useEffect} from "react";
+import { connect } from 'react-redux';
 import axios from 'axios';
 import "./products.css";
-import { connect } from 'react-redux'
 
-function Products() {
+
+function Products(props) {
+
+
+console.log(props,"kjkjjkjkjk");
 
   const [products, setProducts] = useState([]);
 

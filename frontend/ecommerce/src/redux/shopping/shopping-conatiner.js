@@ -1,7 +1,7 @@
 import  {connect} from 'react-redux';
 import  {addToCart} from './shopping-action';
 
-
+import Products  from '../../components/products/products';
 const mapStateToProps=state=>({
 
   
