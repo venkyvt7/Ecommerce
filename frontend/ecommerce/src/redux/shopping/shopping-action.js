@@ -6,7 +6,7 @@ return
 {
     
     type:actionTypes.ADD_TO_CART,
-    data :data
+    data:data
   
 };
 

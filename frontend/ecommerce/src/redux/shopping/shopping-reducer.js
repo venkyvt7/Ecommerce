@@ -10,8 +10,9 @@ const shopReducer = (state=INITIAL_STATE, action) => {
     case actionTypes.ADD_TO_CART:
       return {
 
-
-        
+    
+       ...state,
+       cart:action.data 
              
 
 

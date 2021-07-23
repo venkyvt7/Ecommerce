@@ -14,6 +14,13 @@ function Products() {
 
   }, [])
 
+
+  
+  const [cart,setCart]=useState([]);
+
+  
+
+
   return (
     <div>
       <div>
