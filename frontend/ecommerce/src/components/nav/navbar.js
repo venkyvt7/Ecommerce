@@ -22,15 +22,15 @@ console.warn(props.data.cardItems.length,"navbr");
            <div className="links" id={butt?"hidden":"show"}>   
            
            <a href="/home">   <li> HOME</li> </a> 
-           <a href="/shop">    <li> SHOP</li> </a> 
-           <a href="/cart">  <li> 
+           {/* <a href="/shop">    <li> SHOP</li> </a>  */}
+           <a href="/shop">  <li> 
            <div className="cartshow" style={{ display:"flex",  float:"right" ,marginTop:"12px"}}> 
            
            
            <div style={{ display:"flex",  float:"right" ,marginTop:"12px"}} > {props.data.cardItems.length}</div> 
 <ShoppingCartIcon/> </div>
                 
-               CART</li> </a> 
+             SHOP</li> </a> 
            <a href="/myorders">  <li> MYORDERS</li> </a> 
            <a href="/account">  <li>ACCOUNT</li> </a> 
            <a href="/logout">  <li> LOGOUT  </li> </a> 

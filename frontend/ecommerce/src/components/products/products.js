@@ -8,7 +8,7 @@ import { addToCart } from "../../redux/shopping/shopping-action";
 function Products(props) {
 
 
-  console.warn(props.data)
+  // console.warn(props.data.cardItems)
 
   const [products, setProducts] = useState([]);
 
@@ -20,12 +20,12 @@ function Products(props) {
   }, [])
 
 
-  useEffect(() => {
+  // useEffect(() => {
    
   
-    console.log(props.data.cardItems.length,"kjkjjkjkjkf")
+  //   // console.log(props.dat),"kjkjjkjkjkf")
 
-  })
+  // })
 
   
   // const [cart,setCart]=useState([]);
@@ -36,10 +36,48 @@ function Products(props) {
 
   return (
     <div>
+
+<div className="cart1">
+
+<div className="insidecard">
+  
+  
+  <div> 
+  
+
+   <div className="cart-main">
+              <h2> ff</h2>
+
+            {props.data.cardItems.map((data)=>{
+
+          return <><h1> kkkkkkds</h1> </>
+
+            })}
+
+
+              <h3> hie</h3>
+              <h3> hie</h3>
+           </div>
+
+           </div>
+
+   </div>
+         </div>
+
+<div> .</div>
       <div>
         {" "}
-        {props.data.cardItems.length}
+
+       
+
+
+
+        {/* {props.data.cardItems.length} */}
         <h1> Products</h1>{" "}
+
+         
+
+
       </div>
       <hr />
 

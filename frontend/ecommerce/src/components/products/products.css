@@ -5,6 +5,28 @@
    
 }
 
+.cart1{
+
+/* display: block; */
+/* float: right; */
+
+}
+
+.cart-main{
+    /* display: flex; */
+}
+
+.insidecart{
+    display: flex;
+}
+
+
+.cart1 div{
+   
+    margin-left: 55vh;
+    /* float:right; */
+    /* display: block; */
+}
 .card {
 
     width:90vw;
